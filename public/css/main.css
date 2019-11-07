@@ -110,7 +110,34 @@ body {
 	}
 
 	.main-nav.open {
-		display: block;
+		/*display: block;*/
+		height: 100vh;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+	}
+
+	.main-nav.open .menu {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		margin-top: -100px;
 	}
 }
 
@@ -1224,7 +1251,7 @@ cite  {
 	margin-right: auto;
 }
 /*.contact-first {*/
-	/*padding-bottom: 83px;*/
+/*padding-bottom: 83px;*/
 /*}*/
 
 .phone, .address, .email {
@@ -1278,11 +1305,11 @@ cite  {
 }
 
 /*.contact .card {*/
-	/*display: flex;*/
-	/*flex-direction: row;*/
-	/*justify-content: center;*/
-	/*align-items: center;*/
-	/*flex-wrap: wrap;*/
+/*display: flex;*/
+/*flex-direction: row;*/
+/*justify-content: center;*/
+/*align-items: center;*/
+/*flex-wrap: wrap;*/
 /*}*/
 
 .contact .card div {
@@ -1593,6 +1620,12 @@ footer {
 	}
 }
 
+@media (max-width: 680px) {
+	.portfolio li {
+		margin-bottom: 25px;
+	}
+}
+
 @media (max-width: 576px) {
 	.about .col-4, .servises .col-4{
 		width: 100%;
@@ -1653,14 +1686,11 @@ footer {
 		width: 100%;
 		margin-bottom: 15px;
 	}
-	.portfolio li {
-		margin-bottom: 25px;
-	}
 }
 @media (max-width: 491px) {
-.informed button {
-	margin-bottom: 20px;
-}
+	.informed button {
+		margin-bottom: 20px;
+	}
 }
 
 @media (max-width: 480px) {
