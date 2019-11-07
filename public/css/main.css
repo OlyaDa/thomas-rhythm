@@ -20,7 +20,7 @@ body {
 	display: table;
 	content: '';
 	clear: both;
-} 
+}
 
 .container {
 	max-width: 1200px;
@@ -57,17 +57,17 @@ body {
 }
 
 .header__inner {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
 }
 
 .logo {
@@ -87,7 +87,7 @@ body {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-} 
+}
 
 @media (max-width: 768px) {
 	.menu {
@@ -171,7 +171,7 @@ body {
 	display: block;
 	height: 2px;
 	background-color: #fff;
-	margin: 6px 0; 
+	margin: 6px 0;
 }
 
 /*-----------------BANNER----------------*/
@@ -179,13 +179,11 @@ body {
 .banner {
 	min-height: 895px;
 	text-align: center;
-	background-image: url(../images/header-bg.png);
-	background-repeat: no-repeat;
-	background-position: center;
+	background: url(../../public/images/header-bg.png) center no-repeat;
 	background-size: cover;
-	padding: 25px 0; 
-	display: -webkit-box; 
-	display: -ms-flexbox; 
+	padding: 25px 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-align: center;
 	-ms-flex-align: center;
@@ -203,8 +201,7 @@ body {
 	font-size: 30px;
 	letter-spacing: 54px;
 	color: #fefefe;
-	margin: 0;
-	margin-bottom: 100px;
+	margin: 0 0 100px;
 }
 
 .banner p {
@@ -230,12 +227,12 @@ body {
 	-webkit-transform: rotate(-45deg);
 	transform: rotate(-45deg);
 	text-align: center;
-    position: absolute;
-    top: 4px;
-    left: 4px;
-    bottom: 0;
-    right: 0;
-    margin: 0;
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	bottom: 0;
+	right: 0;
+	margin: 0;
 }
 
 .scroll-down .fa {
@@ -244,27 +241,27 @@ body {
 
 .banner a {
 	position: absolute;
-    bottom: 40px;
+	bottom: 40px;
 }
 
 /*-----------------ABOUT STUDIO----------------*/
 
 .card-container {
-  position: relative;
+	position: relative;
 }
 
 .skills {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #000;
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  -webkit-transform:scale(0);
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #000;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	-webkit-transform:scale(0);
+	-webkit-transition: .3s ease;
+	transition: .3s ease;
 }
 
 .skills-container {
@@ -276,7 +273,7 @@ body {
 
 .skills h4 {
 	padding-top: 50px;
-	font-family: 'Dosis';
+	font-family: 'Dosis', sans-serif;
 	font-size: 18px;
 	text-transform: uppercase;
 	font-weight: 400;
@@ -293,256 +290,255 @@ body {
 	margin-bottom: 40px;
 }
 
-  .progress-item {
-    margin-bottom: 10px;
-  }
+.progress-item {
+	margin-bottom: 10px;
+}
 
-  .progress {
-  	margin-top: 6px;
+.progress {
+	margin-top: 6px;
 	width: 100%;
 	height: 12px;
 	background-color: #1c1c1c;
 }
 
 @-webkit-keyframes art-branding {
-	0%{width: 0%;}
+	0%{width: 0;}
 	100%{width: 80%;}
 }
 
 @keyframes art-branding {
-	0%{width: 0%;}
+	0%{width: 0;}
 	100%{width: 80%;}
 }
 
 @-webkit-keyframes web-branding {
-	0%{width: 0%;}
+	0%{width: 0;}
 	100%{width: 75%;}
 }
 
 @keyframes web-branding {
-	0%{width: 0%;}
+	0%{width: 0;}
 	100%{width: 75%;}
 }
 
 @-webkit-keyframes dev-branding {
-	0%{width: 0%;}
+	0%{width: 0;}
 	100%{width: 75%;}
 }
 
 @keyframes dev-branding {
-	0%{width: 0%;}
+	0%{width: 0;}
 	100%{width: 75%;}
 }
 
 .card-container:hover .art-branding {
 	background-color: #bdbdbd;
-	width: 0%;
+	width: 0;
 	height: 12px;
-	
+
 	-webkit-animation:art-branding 2s linear 1 forwards;
 	animation:art-branding 2s linear 1 forwards;
 }
 
 .card-container:hover .web-branding {
 	background-color: #bdbdbd;
-	width: 0%;
+	width: 0;
 	height: 12px;
-	
+
 	-webkit-animation:web-branding 2s linear 1 forwards;
 	animation:web-branding 2s linear 1 forwards;
 }
 
 .card-container:hover .dev-branding {
 	background-color: #bdbdbd;
-	width: 0%;
+	width: 0;
 	height: 12px;
-	
+
 	-webkit-animation:dev-branding 2s linear 1 forwards;
 	animation:dev-branding 2s linear 1 forwards;
 }
 
 @-webkit-keyframes art-design {
-	0%{width: 0%;}
+	0%{width: 0;}
 	100%{width: 98%;}
 }
 
 @keyframes art-design {
-	0%{width: 0%;}
+	0%{width: 0;}
 	100%{width: 98%;}
 }
 
 @-webkit-keyframes web-design {
-	0%{width: 0%;}
+	0%{width: 0;}
 	100%{width: 90%;}
 }
 
 @keyframes web-design {
-	0%{width: 0%;}
+	0%{width: 0;}
 	100%{width: 90%;}
 }
 
 @-webkit-keyframes dev-design {
-	0%{width: 0%;}
+	0%{width: 0;}
 	100%{width: 60%;}
 }
 
 @keyframes dev-design {
-	0%{width: 0%;}
+	0%{width: 0;}
 	100%{width: 60%;}
 }
 
 .card-container:hover .art-design {
 	background-color: #bdbdbd;
-	width: 0%;
+	width: 0;
 	height: 12px;
-	
+
 	-webkit-animation:art-design 2s linear 1 forwards;
 	animation:art-design 2s linear 1 forwards;
 }
 
 .card-container:hover .web-design {
 	background-color: #bdbdbd;
-	width: 0%;
+	width: 0;
 	height: 12px;
-	
+
 	-webkit-animation:web-design 2s linear 1 forwards;
 	animation:web-design 2s linear 1 forwards;
 }
 
 .card-container:hover .dev-design {
 	background-color: #bdbdbd;
-	width: 0%;
+	width: 0;
 	height: 12px;
-	
+
 	-webkit-animation:dev-design 2s linear 1 forwards;
 	animation:dev-design 2s linear 1 forwards;
 }
 
 @-webkit-keyframes art-development {
-	0%{width: 0%;}
+	0%{width: 0;}
 	100%{width: 60%;}
 }
 
 @keyframes art-development {
-	0%{width: 0%;}
+	0%{width: 0;}
 	100%{width: 60%;}
 }
 
 @-webkit-keyframes web-development {
-	0%{width: 0%;}
+	0%{width: 0;}
 	100%{width: 70%;}
 }
 
 @keyframes web-development {
-	0%{width: 0%;}
+	0%{width: 0;}
 	100%{width: 70%;}
 }
 
 @-webkit-keyframes dev-development {
-	0%{width: 0%;}
+	0%{width: 0;}
 	100%{width: 98%;}
 }
 
 @keyframes dev-development {
-	0%{width: 0%;}
+	0%{width: 0;}
 	100%{width: 98%;}
 }
 
 .card-container:hover .art-development {
 	background-color: #bdbdbd;
-	width: 0%;
+	width: 0;
 	height: 12px;
-	
+
 	-webkit-animation:art-development 2s linear 1 forwards;
 	animation:art-development 2s linear 1 forwards;
 }
 
 .card-container:hover .web-development {
 	background-color: #bdbdbd;
-	width: 0%;
+	width: 0;
 	height: 12px;
-	
+
 	-webkit-animation:web-development 2s linear 1 forwards;
 	animation:web-development 2s linear 1 forwards;
 }
 
 .card-container:hover .dev-development {
 	background-color: #bdbdbd;
-	width: 0%;
+	width: 0;
 	height: 12px;
-	
+
 	-webkit-animation:dev-development 2s linear 1 forwards;
 	animation:dev-development 2s linear 1 forwards;
 }
 @-webkit-keyframes art-photography {
-	0%{width: 0%;}
+	0%{width: 0;}
 	100%{width: 90%;}
 }
 @keyframes art-photography {
-	0%{width: 0%;}
+	0%{width: 0;}
 	100%{width: 90%;}
 }
 
 @-webkit-keyframes web-photography {
-	0%{width: 0%;}
+	0%{width: 0;}
 	100%{width: 80%;}
 }
 
 @keyframes web-photography {
-	0%{width: 0%;}
+	0%{width: 0;}
 	100%{width: 80%;}
 }
 
 @-webkit-keyframes dev-photography {
-	0%{width: 0%;}
+	0%{width: 0;}
 	100%{width: 75%;}
 }
 
 @keyframes dev-photography {
-	0%{width: 0%;}
+	0%{width: 0;}
 	100%{width: 75%;}
 }
 
 .card-container:hover .art-photography {
 	background-color: #bdbdbd;
-	width: 0%;
+	width: 0;
 	height: 12px;
-	
+
 	-webkit-animation:art-photography 2s linear 1 forwards;
 	animation:art-photography 2s linear 1 forwards;
 }
 
 .card-container:hover .web-photography {
 	background-color: #bdbdbd;
-	width: 0%;
+	width: 0;
 	height: 12px;
-	
+
 	-webkit-animation:web-photography 2s linear 1 forwards;
 	animation:web-photography 2s linear 1 forwards;
 }
 
 .card-container:hover .dev-photography {
 	background-color: #bdbdbd;
-	width: 0%;
+	width: 0;
 	height: 12px;
-	
+
 	-webkit-animation:dev-photography 2s linear 1 forwards;
 	animation:dev-photography 2s linear 1 forwards;
 }
 
 .progress-title span {
-	font-weight: 400;
 	letter-spacing: .2em;
 	color: rgba(255, 255, 255, .9);
 	text-transform: uppercase;
 	font-size: 11px;
-	font-family: 'Dosis';
+	font-family: 'Dosis', sans-serif;
 	font-weight: bold;
 }
 
 .card-container:hover .skills {
-  -webkit-transform: scale(1);
-  transform: scale(1)
+	-webkit-transform: scale(1);
+	transform: scale(1)
 }
 
 .about {
@@ -559,15 +555,14 @@ body {
 }
 
 h2 {
-	margin: 0;
 	font-family: 'Dosis', sans-serif;
 	font-weight: normal;
 	letter-spacing: 10px;
 	text-transform: uppercase;
 	font-size: 18px;
 	color: #111;
-	margin-bottom: 77px;
-	}
+	margin: 0 0 77px;
+}
 
 blockquote {
 	font-family: 'Open Sans', sans-serif;
@@ -616,25 +611,25 @@ cite  {
 	font-weight: normal;
 	text-transform: uppercase;
 	text-align: center;
- 	color: #777;
+	color: #777;
 }
 
 .team img {
 	width: 100%;
 }
 
- .name {
- 	display: block;
- 	font-size: 15px;
- 	letter-spacing: 7px;
- 	padding-bottom: 16px;
- }
+.name {
+	display: block;
+	font-size: 15px;
+	letter-spacing: 7px;
+	padding-bottom: 16px;
+}
 
- .post {
+.post {
 	font-size: 12px;
 	display: block;
 	letter-spacing: 6px;
- }
+}
 
 /*-----------------SERVISES----------------*/
 
@@ -674,9 +669,9 @@ cite  {
 	color: #000;
 }
 
-.servises li:last-child {
-	margin-right: 0;
-}
+/*.servises li:last-child {*/
+/*margin-right: 0;*/
+/*}*/
 
 .servises .tabs__caption {
 	text-align: center;
@@ -692,9 +687,9 @@ cite  {
 }
 
 .card-img {
-    font-size: 48px;
-    margin-bottom: 37px;
-    text-align: center;
+	font-size: 48px;
+	margin-bottom: 37px;
+	text-align: center;
 }
 
 .card-icon {
@@ -726,10 +721,10 @@ cite  {
 }
 
 .holder .text {
- 	width: 50%;
- 	display: inline-block;
+	width: 50%;
+	display: inline-block;
 
- }
+}
 
 .holder h3 {
 	font-family: 'Dosis', sans-serif;
@@ -750,13 +745,13 @@ cite  {
 	color: #777;
 	line-height: 26px;
 }
- 
- .holder .mac {
- 	display: inline-block;
- 	position: absolute;
- 	right: 0;
-    top: -30px;
- }
+
+.holder .mac {
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	top: -30px;
+}
 
 .btn {
 	font-family: 'Open Sans', sans-serif;
@@ -795,13 +790,10 @@ cite  {
 }
 
 .portfolio p {
-	margin: 0;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 86px;
-    max-width: 755px;
+	margin: 0 auto 86px;
+	max-width: 755px;
 }
- 
+
 .galaty-caption li {
 	font-family: 'Dosis', sans-serif;
 	font-weight: normal;
@@ -872,7 +864,7 @@ cite  {
 	letter-spacing: 7px;
 	text-transform: uppercase;
 	margin-top: 0;
-} 
+}
 
 .creative .btn {
 	margin: 0;
@@ -896,7 +888,7 @@ cite  {
 	color: #000;
 }
 .creative .button {
-	text-align: center; 
+	text-align: center;
 }
 
 /*-----------------WHY CHOOSE US----------------*/
@@ -916,11 +908,11 @@ cite  {
 
 .choose p {
 	font-size: 14px;
-    font-family: 'Open Sans';
-    font-weight: 300;
-    line-height: 26px;
-    color: #777;
-    margin-bottom: 80px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	line-height: 26px;
+	color: #777;
+	margin-bottom: 80px;
 }
 
 /*-----------------WHAT PEOPLE SAY (SLIDER)----------------*/
@@ -946,13 +938,10 @@ cite  {
 	font-size: 18px;
 	font-style: normal;
 	color: #fff;
-	margin: 0;
 	line-height: 30px;
 	width: 736px;
-	margin-left: auto;
-	margin-right: auto;
 	text-align: center;
-	margin-bottom: 27px;
+	margin: 0 auto 27px;
 }
 
 .slider cite {
@@ -970,23 +959,23 @@ cite  {
 	font-size: 32px;
 	color: #fff;
 	text-align: center;
-} 
+}
 
 .icon {
 	margin-bottom: 24px;
 }
 
 .slick-next {
-    height: 87px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    font-size: 0;
-    width: 0;
-    background: transparent;
-    border: transparent;
+	height: 87px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	font-size: 0;
+	width: 0;
+	background: transparent;
+	border: transparent;
 	border-top: 50px solid transparent;
 	border-right: 44px solid #fff;
 	border-bottom: 50px solid transparent;
@@ -997,16 +986,16 @@ cite  {
 }
 
 .slick-prev {
-    height: 87px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    margin: auto;
-    font-size: 0;
-    width: 0;
-    background: transparent;
-    border: transparent;
+	height: 87px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	margin: auto;
+	font-size: 0;
+	width: 0;
+	background: transparent;
+	border: transparent;
 	border-top: 50px solid transparent;
 	border-left: 44px solid #fff;
 	border-bottom: 50px solid transparent;
@@ -1026,7 +1015,7 @@ cite  {
 	display: inline-block;
 	margin-left: 6px;
 	font-size: 0;
-    color: white;
+	color: white;
 }
 
 .slick-dots li.slick-active button {
@@ -1036,16 +1025,16 @@ cite  {
 
 .slick-dots li:first-child {
 	margin-left: 0;
-} 
+}
 
 .slick-dots button {
 	border-radius: 50%;
-    height: 10px;
-    width: 10px;
-    padding: 0;
-    font-size: 0;
-    background-color: #fff;
-    border: 1px solid;
+	height: 10px;
+	width: 10px;
+	padding: 0;
+	font-size: 0;
+	background-color: #fff;
+	border: 1px solid;
 }
 
 :focus {
@@ -1053,20 +1042,20 @@ cite  {
 }
 
 .slick-prev i {
-    color: #000;
-    font-size: 9px;
-    position: absolute;
-    right: 35px;
-    top: -2px;
+	color: #000;
+	font-size: 9px;
+	position: absolute;
+	right: 35px;
+	top: -2px;
 }
 
 .slick-next i {
 	color: #000;
-    font-size: 9px;
-    position: absolute;
-    left: 35px; 
-    right: 35px;
-    top: -2px;
+	font-size: 9px;
+	position: absolute;
+	left: 35px;
+	right: 35px;
+	top: -2px;
 }
 
 /*-----------------LATEST NEWS----------------*/
@@ -1130,12 +1119,8 @@ cite  {
 
 .news .card-news p {
 
-	 margin: 26px 0 26px;
-    font-size: 15px;
-    font-family: 'Open Sans';
-    font-weight: 300;
-    line-height: 26px;
-
+	margin: 26px 0 26px;
+	line-height: 26px;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: lighter;
 	font-size: 15px;
@@ -1144,7 +1129,7 @@ cite  {
 }
 
 .card-news .card-img {
-    margin-bottom: 30px;
+	margin-bottom: 30px;
 }
 
 .read-more {
@@ -1191,9 +1176,8 @@ cite  {
 	color: #111;
 	letter-spacing: 6px;
 	text-transform: uppercase;
-	margin: 0;
-	margin-bottom: 21px;
-} 
+	margin: 0 0 21px;
+}
 
 .informed input {
 	width: 320px;
@@ -1239,8 +1223,11 @@ cite  {
 	margin-left: auto;
 	margin-right: auto;
 }
+/*.contact-first {*/
+	/*padding-bottom: 83px;*/
+/*}*/
 
-.phone, .adress, .email {
+.phone, .address, .email {
 	width: 30px;
 	height: 30px;
 	border-radius: 3px;
@@ -1251,38 +1238,37 @@ cite  {
 	margin: 0;
 }
 
-.phone div,.adress div, .email div {
+.phone div,.address div, .email div {
 	-webkit-transform: rotate(-45deg);
 	transform: rotate(-45deg);
 	text-align: center;
-    position: absolute;
-    top: 4px;
-    left: 4px;
-    bottom: 0;
-    right: 0;
-    margin: 0;
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	bottom: 0;
+	right: 0;
+	margin: 0;
 }
 
 .contact .fa {
 	color: #f8f8f8;
- }
+}
 
- .contact h2 {
- 	margin: 0;
- 	margin-bottom: 98px;
- }
+.contact h2 {
+	margin: 0 0 98px;
+}
 
- .contact h3 {
- 	font-family: 'Dosis', sans-serif;
+.contact h3 {
+	font-family: 'Dosis', sans-serif;
 	font-weight: normal;
 	text-transform: uppercase;
 	font-size: 12px;
 	letter-spacing: 5px;
 	color: #777;
- }
+}
 
 .contact a, .contact span {
- 	font-family: 'Open Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight: lighter;
 	color: #444;
 	text-decoration: none;
@@ -1290,6 +1276,14 @@ cite  {
 	transition: .3s;
 	font-size: 15px;
 }
+
+/*.contact .card {*/
+	/*display: flex;*/
+	/*flex-direction: row;*/
+	/*justify-content: center;*/
+	/*align-items: center;*/
+	/*flex-wrap: wrap;*/
+/*}*/
 
 .contact .card div {
 	display: inline-block;
@@ -1367,9 +1361,9 @@ cite  {
 	overflow: hidden;
 }
 
-  .map:hover .descr-map{
-  -webkit-transform: translateY(100%);
-  transform: translateY(100%);
+.map:hover .descr-map{
+	-webkit-transform: translateY(100%);
+	transform: translateY(100%);
 }
 
 .descr-map {
@@ -1393,17 +1387,17 @@ cite  {
 	z-index: 1;
 	-webkit-transform: translate(0);
 	transform: translate(0);
-    -webkit-transition: -webkit-transform 1s;
-    transition: -webkit-transform 1s;
-    transition: transform 1s;
-    transition: transform 1s, -webkit-transform 1s;
+	-webkit-transition: -webkit-transform 1s;
+	transition: -webkit-transform 1s;
+	transition: transform 1s;
+	transition: transform 1s, -webkit-transform 1s;
 }
 
 .map .adress {
 	background-color: #fff;
 	margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 28px;
+	margin-right: auto;
+	margin-bottom: 28px;
 }
 
 .map .fa-map-marker {
@@ -1454,12 +1448,12 @@ footer {
 	-webkit-transform: rotate(-45deg);
 	transform: rotate(-45deg);
 	text-align: center;
-    position: absolute;
-    top: 4px;
-    left: 4px;
-    bottom: 0;
-    right: 0;
-    margin: auto;
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	bottom: 0;
+	right: 0;
+	margin: auto;
 }
 
 .social-icons .fa {
@@ -1506,49 +1500,48 @@ footer {
 
 @media (max-width: 992px) {
 	.slider blockquote {
-    	display: block;
-    	width: 536px;
+		display: block;
+		width: 536px;
 	}
 	.banner h1 {
-	font-family: 'Dosis', sans-serif;
-	font-weight: normal;
-	text-transform: uppercase;
-	font-size: 24px;
-	letter-spacing: 54px;
-	color: #fefefe;
-	margin: 0;
-	margin-bottom: 100px;
-	text-align: center;
-}
-    .holder .mac {
-        text-align:center;
-        margin-top:25px;
-        right:0px;
-        position:static;
-    }
-     .holder {
-        text-align:center;
-        margin-top:25px;
-        right:0px;
-        position:static;
-    }
-    .holder h3 {
+		font-family: 'Dosis', sans-serif;
+		font-weight: normal;
+		text-transform: uppercase;
+		font-size: 24px;
+		letter-spacing: 54px;
+		color: #fefefe;
+		margin: 0 0 100px;
+		text-align: center;
+	}
+	.holder .mac {
+		text-align:center;
+		margin-top:25px;
+		right:0;
+		position:static;
+	}
+	.holder {
+		text-align:center;
+		margin-top:25px;
+		right: 0;
+		position:static;
+	}
+	.holder h3 {
 		line-height: 2;
-    }
-    .mac img {
-        width:100%;
-    }
-    .exclusive .button {
+	}
+	.mac img {
+		width:100%;
+	}
+	.exclusive .button {
 		text-align: center;
 	}
 	.servises .col-5 {
- 		width: 33.3333%;
- 		margin-bottom: 15px;	
- 	}
- 	.servises h2 {
- 		margin-bottom: 85px;
- 	}
- 	.serveses {
+		width: 33.3333%;
+		margin-bottom: 15px;
+	}
+	.servises h2 {
+		margin-bottom: 85px;
+	}
+	.serveses {
 		padding-top: 106px;
 		padding-bottom: 116px;
 	}
@@ -1559,7 +1552,7 @@ footer {
 		padding-top: 106px;
 		padding-bottom: 116px;
 	}
- 	.contact input {
+	.contact input {
 		width: 254px;
 	}
 	.contact textarea {
@@ -1575,8 +1568,8 @@ footer {
 		padding-top: 106px;
 	}
 	.mac img {
-        display: none;
-    }
+		display: none;
+	}
 	.banner h1 {
 		font-family: 'Dosis', sans-serif;
 		font-weight: normal;
@@ -1584,15 +1577,25 @@ footer {
 		font-size: 24px;
 		letter-spacing: 32px;
 		color: #fefefe;
-		margin: 0;
-		margin-bottom: 100px;
+		margin: 0 0 100px;
 		text-align: center;
 	}
-}  
+}
+
+@media (max-width: 725px) {
+	.contact .col-4 {
+		text-align: center;
+		width: 50%;
+	}
+	.contact .col-email {
+		text-align: center;
+		width: 100%;
+	}
+}
 
 @media (max-width: 576px) {
 	.about .col-4, .servises .col-4{
-		width: 100%;	
+		width: 100%;
 	}
 	.about .text {
 		margin-bottom: 65px;
@@ -1601,47 +1604,47 @@ footer {
 		text-align: center;
 	}
 	.about .team .col-4 {
-		margin-bottom: 35px;	
+		margin-bottom: 35px;
 	}
 	.about .text .col-4, .servises .text .col-4 {
-		margin-bottom: 15px;	
+		margin-bottom: 15px;
 	}
 	.servises .col-5 {
- 		width: 50%;
- 		margin-bottom: 35px;
- 	}
+		width: 50%;
+		margin-bottom: 35px;
+	}
 	.serveses {
 		padding-top: 100px;
 		padding-bottom: 100px;
 	}
 	.servises .card-icon {
- 		margin-bottom: 30px;
- 		}
- 	.choose .col-4 {
- 		width: 100%;
- 		margin-bottom: 35px;
- 	}
- 	.card-choose .row:first-child {
-    margin-bottom: 0;
+		margin-bottom: 30px;
 	}
-    .news .col-4 {
-    	width: 100%;
-    	margin-bottom: 35px;
-    }
-    .news h2 {
-    	display: block;
-    	text-align: center;
-    	float: none;
-    }
-    .news a {
-    	float: none;
-    	text-align: center;
-    }
-    .contact input {
-	width: 234px;
+	.choose .col-4 {
+		width: 100%;
+		margin-bottom: 35px;
+	}
+	.card-choose .row:first-child {
+		margin-bottom: 0;
+	}
+	.news .col-4 {
+		width: 100%;
+		margin-bottom: 35px;
+	}
+	.news h2 {
+		display: block;
+		text-align: center;
+		float: none;
+	}
+	.news a {
+		float: none;
+		text-align: center;
+	}
+	.contact input {
+		width: 234px;
 	}
 	.contact textarea {
-	width: 230px;
+		width: 234px;
 	}
 	.contact .col-4 {
 		width: 100%;
@@ -1650,22 +1653,30 @@ footer {
 		width: 100%;
 		margin-bottom: 15px;
 	}
+	.portfolio li {
+		margin-bottom: 25px;
+	}
+}
+@media (max-width: 491px) {
+.informed button {
+	margin-bottom: 20px;
+}
 }
 
 @media (max-width: 480px) {
 	.contact textarea {
-	width: 55%;
+		width: 234px;
 	}
 	.servises .col-5 {
- 		width: 100%;
- 		margin-bottom: 35px;	
- 	}
- 	.contact .col-6 {
- 		width: 100%;
- 	}
- 	.slider blockquote {
-   		display: block;
-  		width: 300px;
+		width: 100%;
+		margin-bottom: 35px;
+	}
+	.contact .col-6 {
+		width: 100%;
+	}
+	.slider blockquote {
+		display: block;
+		width: 300px;
 	}
 	.galaty-caption li {
 		font-family: 'Dosis', sans-serif;
@@ -1674,7 +1685,6 @@ footer {
 		font-size: 13px;
 		letter-spacing: 6px;
 		color: #777;
-		display: inline-block;
 		display: block;
 		text-align: center;
 		margin-right: 0;
@@ -1687,9 +1697,9 @@ footer {
 		width: 250px;
 	}
 	.slider blockquote {
-    	display: block;
-    	width: 250px;
-	}	
+		display: block;
+		width: 250px;
+	}
 	.slider {
 		padding-top: 50px;
 	}
@@ -1700,17 +1710,16 @@ footer {
 		font-size: 24px;
 		letter-spacing: 24px;
 		color: #fefefe;
-		margin: 0;
-		margin-bottom: 100px;
+		margin: 0 0 100px;
 		text-align: center;
 	}
 	.exclusive .btn {
-	padding: 15px 30px 15px 30px;
+		padding: 15px 30px 15px 30px;
 	}
 	.contact textarea {
-	width: 80%;
+		width: 80%;
 	}
 	.slider cite {
-    margin-bottom: 50px;
+		margin-bottom: 50px;
 	}
 }
